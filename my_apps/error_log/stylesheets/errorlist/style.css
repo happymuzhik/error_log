@@ -1,0 +1,40 @@
+.error-list__title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.error-list__table {
+  width: 100%;
+}
+.error-list__table tbody tr:nth-child(odd) {
+  background-color: #e5e5e5;
+}
+.error-list__table th {
+  padding: 10px;
+}
+.error-list__table th[data-type] {
+  cursor: pointer;
+}
+.error-list__table th[data-direction].sort:after {
+  content: "";
+  width: 0px;
+  height: 5px;
+  position: absolute;
+  margin-right: -1px;
+  margin-top: -1px;
+  border: 3px solid transparent;
+  border-top: 5px solid #333;
+}
+.error-list__table th[data-direction=asc].sort:after {
+  border-bottom: 5px solid #333;
+  border-top: 3px solid transparent;
+  margin-top: -10px;
+}
+.error-list__table td {
+  padding: 10px;
+  text-align: center;
+}
+.error-list__table .error-list__desc-col {
+  word-break: break-all;
+  text-align: justify;
+}

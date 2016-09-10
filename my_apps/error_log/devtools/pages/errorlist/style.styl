@@ -1,0 +1,35 @@
+.error-list__title
+	text-align: center
+	font-weight: bold
+	margin-bottom: 10px
+
+.error-list__table
+	width: 100%
+	tbody
+		tr:nth-child(odd)
+			background-color: #e5e5e5
+		
+	th
+		padding: 10px		
+	th[data-type]
+		cursor: pointer
+	th[data-direction].sort:after
+		content: ""
+		width: 0px
+		height: 5px
+		position: absolute
+		margin-right: -1px
+		margin-top: -1px
+		border: 3px solid transparent
+		border-top: 5px solid #333
+	th[data-direction=asc].sort:after
+		border-bottom: 5px solid #333
+		border-top: 3px solid transparent
+		margin-top: -10px
+
+	td
+		padding: 10px
+		text-align: center
+	.error-list__desc-col
+		word-break: break-all
+		text-align: justify

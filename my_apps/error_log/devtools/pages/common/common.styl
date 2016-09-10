@@ -1,0 +1,276 @@
+@import "./fonts/osans/osans.css";
+
+main_bg_color = #FFF
+secondary_color = #CCC
+standart_font_size = 12pt
+standart_font_color = #333
+inputs_border_color = #A9A9A9
+
+default_color = #9E9E9E
+danger_color = #F44336
+success_color = #4CAF50
+info_color = #2196F3
+
+standart_border_setting(color){
+	1px solid color
+}
+
+html,
+body,
+body * 
+	font-size: standart_font_size
+	line-height: standart_font_size
+	color: standart_font_color
+	box-sizing: border-box
+	font-family: 'OpenSansRegular'
+
+.default
+	color: default_color
+
+.info
+	color: info_color
+	
+.danger
+	color: danger_color
+	
+.success
+	color: success_color
+	
+.default-bg
+	background-color: default_color
+
+.info-bg
+	background-color: info_color
+	
+.danger-bg
+	background-color: danger_color
+	
+.success-bg
+	background-color: success_color
+
+.wrapper
+	background-color: main_bg_color
+	position: absolute
+	width: 100%
+	height: 100%
+	left: 0px
+	top: 0px
+
+.hidden
+	display: none
+
+.no-margin
+	margin: 0px
+	
+.text-align-right
+	text-align: right
+
+input,
+select,
+textarea
+	margin-bottom: 5px
+	width: 100%
+	height: 40px
+	padding: 5px 10px
+	font-size: 12pt
+	line-height: 12pt
+	border: standart_border_setting(inputs_border_color)
+
+input:focus,
+select:focus,
+textarea:focus
+	outline: none
+
+textarea
+	max-height: 200px
+	min-height: 40px
+	resize: vertical
+	display: block
+	padding: 10px
+
+button,
+.button
+	height: 40px
+	font-size: 15px
+	padding: 10px
+	cursor: pointer
+	text-align: center
+	background-color: default_color
+	color: #FFF
+	border: none	
+
+button.expand,
+.button.expand
+	width: 100%
+	
+button:active,
+.button:active
+	position: relative
+	top: 1px
+	left: -1px
+
+button:focus,
+.button:focus
+	box-shadow: none
+	outline: none
+
+button:hover,
+.button:hover
+	background-color: default_color - 10%
+	transition: background-color 200ms ease-in-out
+
+button.info,
+.button.info
+	background-color: info_color
+	color: #FFF
+
+button.info:hover,
+.button.info:hover
+	background-color: info_color - 10%
+
+button.danger,
+.button.danger
+	background-color: danger_color
+	color: #FFF
+
+button.danger:hover,
+.button.danger:hover
+	background-color: danger_color - 10%
+
+button.success,
+.button.success
+	background-color: success_color
+	color: #FFF
+
+button.success:hover,
+.button.success:hover
+	background-color: success_color - 10%
+		
+.header
+	height: 40px
+	padding-top: 10px
+	text-align: center
+	border: standart_border_setting(secondary_color)
+
+.user-info
+	position: absolute
+	right: 10px
+	top: 10px
+	
+.content
+	height: calc(100% - 40px)
+	
+.left-col
+	float: left
+	height: 100%
+	width: 200px
+	border-right: standart_border_setting(secondary_color)
+
+.right-col
+	float: left
+	height: 100%
+	width: calc(100% - 200px)
+	padding: 10px
+	max-height: 100%
+	overflow-y: auto
+
+.menu__block
+	display: block
+	width: 100%
+	text-align: center
+	padding: 12px
+	height: 40px
+	border-bottom: standart_border_setting(secondary_color)
+	cursor: pointer
+	text-decoration: none
+	
+.menu__block:hover
+	background-color: secondary_color + 10%
+	transition: background-color 200ms ease-in-out
+	
+.row
+	float: left
+	width: 100%
+	margin-bottom: 5px
+	padding: 0px 2.5px
+	clear: both
+
+.row.no-margin
+	margin: 0px
+	
+.row.no-padding
+	padding: 0px
+
+.row
+	.column-1,
+	.column-2,
+	.column-3,
+	.column-4,
+	.column-5,
+	.column-6,
+	.column-7,
+	.column-8,
+	.column-9,
+	.column-10,
+	.column-11,
+	.column-12
+		float: left
+		padding: 0px 2.5px
+		min-height: 1px
+
+.row
+	.column-1
+		width: 8.333333%
+	.column-2
+		width: 16.666666%
+	.column-3
+		width: 25%
+	.column-4
+		width: 33.333333%
+	.column-5
+		width: 41.666666%
+	.column-6
+		width: 50%
+	.column-7
+		width: 58.333333%
+	.column-8
+		width: 66.666666%
+	.column-9
+		width: 75%
+	.column-10
+		width: 83.333333%
+	.column-11
+		width: 91.666666%
+	.column-12
+		width: 100%
+		
+.loader__cont
+	position: fixed
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	background-color: #FFF
+	opacity: 0
+	transition opacity 300ms ease-in-out
+	
+.loader__text
+	position: fixed
+	top: 40%
+	left: 0px
+	width: 100%
+	text-align: center
+	font-size: 14pt
+	line-height: 14pt
+	
+.notify__cont
+	position: fixed
+	top: 0px
+	left: 0px
+	width: 100%
+	color: #FFF
+	height: 40px
+	padding: 10px
+	text-align: center
+	opacity: 0
+	transition opacity 300ms ease-in-out	
