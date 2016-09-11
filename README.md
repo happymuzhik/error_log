@@ -4,6 +4,7 @@
 - MySQL 5.6 ( not less than 5.6 **important!** )
 - MySQL 5.6 JBDC driver for ColdFusion ( included in this package  )
 - ColdFusion Server
+- Works in Chrome, Firefox, Edge ext., IE11 (not less **important!**)
 
 ###### Installation steps
 1. Install ColdFusion Server with developer edition option ( if you haven't done it yet  )
