@@ -1,7 +1,7 @@
 # Error_log
 ## Installation
 ###### Requirements
-- MySQL 5.6 ( not less than 5.6 important! )
+- MySQL 5.6 ( not less than 5.6 **important!** )
 - MySQL 5.6 JBDC driver for ColdFusion ( included in this package  )
 - ColdFusion Server
 
@@ -14,5 +14,5 @@
 6. Access the application at cfserveraddr/my_apps/error_log/ ( for example http://127.0.0.1:8500/my_apps/error_log/ )
 
 ## Something that you may need
-- **DB** - Create database script
-- **devtools/pages** - js and style sources
+- **error_log/DB** - Create database script
+- **error_log/devtools/pages** - js and style sources
